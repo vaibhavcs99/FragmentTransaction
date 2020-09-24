@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         Fragment fragment;
         FragmentManager fm = getSupportFragmentManager();
-
+//ggfhhchchchc
         if (view == findViewById(R.id.button1)){
             fragment = new FragmentOne();
             FragmentTransaction ft = fm.beginTransaction();
