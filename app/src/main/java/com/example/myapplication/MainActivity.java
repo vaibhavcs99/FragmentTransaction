@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
     public void changeFragment(View view){
 
         Fragment fragment;
+        FragmentManager fm = getSupportFragmentManager();
 
         if (view == findViewById(R.id.button1)){
             fragment = new FragmentOne();
-            FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.fragment_place,fragment);
             ft.commit();
@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         if (view == findViewById(R.id.button2)){
             fragment = new FragmentTwo();
-            FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.fragment_place,fragment);
             ft.commit();
